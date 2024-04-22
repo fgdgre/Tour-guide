@@ -1,0 +1,83 @@
+@import "../utiles/colors";
+
+.header {
+  padding: 0 60px;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-navbar {
+    display: flex;
+    gap: 15px;
+
+    &-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    &-list {
+      display: flex;
+      gap: 10px;
+
+      &-button {
+        display: block;
+        text-decoration: none;
+        font-size: 15px;
+        color: $primary-text-color;
+
+        &:hover {
+          color: $secondary-text-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 850px) {
+  .header {
+    &-navbar {
+      gap: 25px;
+
+      &-list {
+        gap: 25px;
+      }
+    }
+
+    .icons {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 10px 60px;
+    &-navbar {
+      &-list {
+        display: none;
+      }
+    }
+
+    .icons {
+      display: none;
+    }
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      padding: 10px;
+    }
+  }
+}

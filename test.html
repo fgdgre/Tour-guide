@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour-guide</title>
+    <link rel="stylesheet" href="test.css" />
+    <link rel="icon" href="./styles/images/location.webp" />
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="header-content">
+        <div class="header-navbar">
+          <h1 class="header-navbar-logo">TOUR-GIUDE</h1>
+
+          <ul class="header-navbar-list">
+            <li>
+              <a class="header-navbar-list-button" href="#stories"> Stories </a>
+            </li>
+            <li>
+              <a class="header-navbar-list-button" href="#gallery"> Gallery </a>
+            </li>
+            <li>
+              <a class="header-navbar-list-button" href="#features">
+                Features
+              </a>
+            </li>
+            <li>
+              <a class="header-navbar-list-button" href="#feedback">
+                Write to us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="icons">
+          <a class="icons-button" href="https://twitter.com/login">
+            <svg
+              class="icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M22 5.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.343 8.343 0 0 1-2.605.981A4.13 4.13 0 0 0 15.85 4a4.068 4.068 0 0 0-4.1 4.038c0 .31.035.618.105.919A11.705 11.705 0 0 1 3.4 4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 6.1 13.635a4.192 4.192 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 2 18.184 11.732 11.732 0 0 0 8.291 20 11.502 11.502 0 0 0 19.964 8.5c0-.177 0-.349-.012-.523A8.143 8.143 0 0 0 22 5.892Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <a class="icons-button" href="https://www.facebook.com/login/">
+            <svg
+              class="icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <a class="icons-button" href="https://www.instagram.com/login/">
+            <svg
+              class="icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.5 4.586A2 2 0 0 1 8.914 4h6.172a2 2 0 0 1 1.414.586L17.914 6H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h1.086L7.5 4.586ZM10 12a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm2-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <a class="icons-button" href="https://www.youtube.com/login/">
+            <svg
+              class="icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <a class="icons-button" href="https://mail.google.com/login/">
+            <svg
+              class="icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z"
+              />
+              <path
+                d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <button class="menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main class="main container">
+      <div class="welcoming container">
+        <div class="welcoming-text">
+          <h2 class="welcoming-text-title">Let`s hit the road</h2>
+          <p class="welcoming-text-about">
+            Lorem ipsum dolor sit amet, consectetur as adipiscing elit. Fusce
+            blandit vulputate elit interdum.Nam quis orci id erat viverra mollis
+            ac at nisl. Duis blandit mollis turpis, vehicula turpis.
+          </p>
+          <p class="welcoming-text-about">
+            Ut id risus metus. Vestibulum dictum, nibh eget aliquam blandit,
+            eros angue condimentum ligula, ut bibendum mauris sem eu dolor.
+          </p>
+          <a class="link" href="#feedback"
+            ><button class="button">START</button></a
+          >
+        </div>
+        <img src="./styles/images/welcoming.jpg" alt="" class="welcoming-img" />
+      </div>
+
+      <div class="story container" id="stories">
+        <article class="story-page">
+          <img src="./styles/images/article1.jpg" alt="" class="story-img" />
+
+          <div class="story-text">
+            <h2 class="story-text-title">Story</h2>
+            <p class="story-text-about">
+              Maecenas in cursus elit, eget interdum tortor. Vestibulum cursus
+              quis dui nec commodo. Sed convallis nisi metus, sit amet pulvinar
+              risus mollis ut. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Suspendisse sed orci et est iaculis egestas.
+              Quisque rutrum, nune eget imperdiet volutpat, una tellus dignissim
+              turpis, ac rhoncus tortor mi sit amet lorem.
+            </p>
+            <a class="link" href="#feedback"
+              ><button class="button">MORE</button></a
+            >
+          </div>
+        </article>
+        <article class="story-page">
+          <div class="story-text">
+            <h2 class="story-text-title">Story</h2>
+            <p class="story-text-about">
+              Maecenas in cursus elit, eget interdum tortor. Vestibulum cursus
+              quis dui nec commodo. Sed convallis nisi metus, sit amet pulvinar
+              risus mollis ut. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Suspendisse sed orci et est iaculis egestas.
+              Quisque rutrum, nune eget imperdiet volutpat, una tellus dignissim
+              turpis, ac rhoncus tortor mi sit amet lorem.
+            </p>
+            <a class="link" href="#feedback"
+              ><button class="button">MORE</button></a
+            >
+          </div>
+          <img src="./styles/images/article2.jpg" alt="" class="story-img" />
+        </article>
+      </div>
+
+      <div class="gallery container" id="gallery">
+        <h2 class="title">Gallery</h2>
+        <div class="gallery-imgs">
+          <button class="gallery-imgs-button right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="gallery-imgs-button-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </button>
+          <button class="gallery-imgs-button left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="gallery-imgs-button-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+
+          <div class="gallery-img">
+            <img
+              src="./styles/images/gallery1.jpg"
+              alt=""
+              class="gallery-img-item"
+            />
+            <div class="gallery-img-text">
+              <h2 class="gallery-img-text-title">Title</h2>
+              <p class="gallery-img-text-about">
+                Acnean vulputate, turpis a rutrum tempus, dui quam molestie
+                purus, vitae mattis mi ligula ut eros.
+              </p>
+              <a class="link" href="#feedback"
+                ><button class="gallery-img-text-button">MORE</button></a
+              >
+            </div>
+          </div>
+          <div class="gallery-img small">
+            <img
+              class="gallery-img-item third"
+              src="./styles/images/gallery2.jpg"
+              alt=""
+            />
+            <div class="gallery-img-text">
+              <h2 class="gallery-img-text-title">Title</h2>
+              <p class="gallery-img-text-about">
+                Acnean vulputate, turpis a rutrum tempus, dui quam molestie
+                purus, vitae mattis mi ligula ut eros.
+              </p>
+              <a class="link" href="#feedback"
+                ><button class="gallery-img-text-button">MORE</button></a
+              >
+            </div>
+          </div>
+          <div class="gallery-img middle">
+            <img
+              src="./styles/images/gallery3.jpg"
+              alt=""
+              class="gallery-img-item"
+            />
+            <div class="gallery-img-text little">
+              <h2 class="gallery-img-text-title">Title</h2>
+              <p class="gallery-img-text-about">
+                Acnean vulputate, turpis a rutrum tempus, dui quam molestie
+                purus, vitae mattis mi ligula ut eros.
+              </p>
+              <a class="link" href="#feedback"
+                ><button class="gallery-img-text-button">MORE</button></a
+              >
+            </div>
+          </div>
+          <div class="gallery-img middle">
+            <img
+              src="./styles/images/gallery4.jpg"
+              alt=""
+              class="gallery-img-item third"
+            />
+            <div class="gallery-img-text">
+              <h2 class="gallery-img-text-title">Title</h2>
+              <p class="gallery-img-text-about">
+                Acnean vulputate, turpis a rutrum tempus, dui quam molestie
+                purus, vitae mattis mi ligula ut eros.
+              </p>
+              <a class="link" href="#feedback"
+                ><button class="gallery-img-text-button">MORE</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features container" id="features">
+        <h2 class="title">Features</h2>
+        <div class="features-row">
+          <div class="features-row-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="features-row-box-icon"
+            >
+              <path
+                d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z"
+              />
+            </svg>
+            <h2 class="features-row-box-title">One</h2>
+            <p class="features-row-box-text">
+              Duis vel erat odio. Duis sed elementum magna, vel egestas dui.
+            </p>
+          </div>
+          <div class="features-row-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="features-row-box-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8.161 2.58a1.875 1.875 0 0 1 1.678 0l4.993 2.498c.106.052.23.052.336 0l3.869-1.935A1.875 1.875 0 0 1 21.75 4.82v12.485c0 .71-.401 1.36-1.037 1.677l-4.875 2.437a1.875 1.875 0 0 1-1.676 0l-4.994-2.497a.375.375 0 0 0-.336 0l-3.868 1.935A1.875 1.875 0 0 1 2.25 19.18V6.695c0-.71.401-1.36 1.036-1.677l4.875-2.437ZM9 6a.75.75 0 0 1 .75.75V15a.75.75 0 0 1-1.5 0V6.75A.75.75 0 0 1 9 6Zm6.75 3a.75.75 0 0 0-1.5 0v8.25a.75.75 0 0 0 1.5 0V9Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <h2 class="features-row-box-title">Two</h2>
+            <p class="features-row-box-text">
+              Cras imperdiet augue et euismod mollis.
+            </p>
+          </div>
+          <div class="features-row-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="features-row-box-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.5 5.625c0-1.036.84-1.875 1.875-1.875h17.25c1.035 0 1.875.84 1.875 1.875v12.75c0 1.035-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 18.375V5.625Zm1.5 0v1.5c0 .207.168.375.375.375h1.5a.375.375 0 0 0 .375-.375v-1.5a.375.375 0 0 0-.375-.375h-1.5A.375.375 0 0 0 3 5.625Zm16.125-.375a.375.375 0 0 0-.375.375v1.5c0 .207.168.375.375.375h1.5A.375.375 0 0 0 21 7.125v-1.5a.375.375 0 0 0-.375-.375h-1.5ZM21 9.375A.375.375 0 0 0 20.625 9h-1.5a.375.375 0 0 0-.375.375v1.5c0 .207.168.375.375.375h1.5a.375.375 0 0 0 .375-.375v-1.5Zm0 3.75a.375.375 0 0 0-.375-.375h-1.5a.375.375 0 0 0-.375.375v1.5c0 .207.168.375.375.375h1.5a.375.375 0 0 0 .375-.375v-1.5Zm0 3.75a.375.375 0 0 0-.375-.375h-1.5a.375.375 0 0 0-.375.375v1.5c0 .207.168.375.375.375h1.5a.375.375 0 0 0 .375-.375v-1.5ZM4.875 18.75a.375.375 0 0 0 .375-.375v-1.5a.375.375 0 0 0-.375-.375h-1.5a.375.375 0 0 0-.375.375v1.5c0 .207.168.375.375.375h1.5ZM3.375 15h1.5a.375.375 0 0 0 .375-.375v-1.5a.375.375 0 0 0-.375-.375h-1.5a.375.375 0 0 0-.375.375v1.5c0 .207.168.375.375.375Zm0-3.75h1.5a.375.375 0 0 0 .375-.375v-1.5A.375.375 0 0 0 4.875 9h-1.5A.375.375 0 0 0 3 9.375v1.5c0 .207.168.375.375.375Zm4.125 0a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5h-9Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <h2 class="features-row-box-title">Three</h2>
+            <p class="features-row-box-text">
+              Phasellus sit amet lacus orci. Aliquam accumsan aliquet una eget
+              commodo.
+            </p>
+          </div>
+
+          <div class="features-row-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="features-row-box-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <h2 class="features-row-box-title">Four</h2>
+            <p class="features-row-box-text">
+              Vestibulum consequat felis mi, ut blandit arcu commodo vel.
+            </p>
+          </div>
+          <div class="features-row-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="features-row-box-icon"
+            >
+              <path
+                d="M6 3a3 3 0 0 0-3 3v1.5a.75.75 0 0 0 1.5 0V6A1.5 1.5 0 0 1 6 4.5h1.5a.75.75 0 0 0 0-1.5H6ZM16.5 3a.75.75 0 0 0 0 1.5H18A1.5 1.5 0 0 1 19.5 6v1.5a.75.75 0 0 0 1.5 0V6a3 3 0 0 0-3-3h-1.5ZM12 8.25a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5ZM4.5 16.5a.75.75 0 0 0-1.5 0V18a3 3 0 0 0 3 3h1.5a.75.75 0 0 0 0-1.5H6A1.5 1.5 0 0 1 4.5 18v-1.5ZM21 16.5a.75.75 0 0 0-1.5 0V18a1.5 1.5 0 0 1-1.5 1.5h-1.5a.75.75 0 0 0 0 1.5H18a3 3 0 0 0 3-3v-1.5Z"
+              />
+            </svg>
+            <h2 class="features-row-box-title">Five</h2>
+            <p class="features-row-box-text">
+              Nullam nec elit nec augue commodo ultricies ust ac lorem.
+            </p>
+          </div>
+          <div class="features-row-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="features-row-box-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.5 3.798v5.02a3 3 0 0 1-.879 2.121l-2.377 2.377a9.845 9.845 0 0 1 5.091 1.013 8.315 8.315 0 0 0 5.713.636l.285-.071-3.954-3.955a3 3 0 0 1-.879-2.121v-5.02a23.614 23.614 0 0 0-3 0Zm4.5.138a.75.75 0 0 0 .093-1.495A24.837 24.837 0 0 0 12 2.25a25.048 25.048 0 0 0-3.093.191A.75.75 0 0 0 9 3.936v4.882a1.5 1.5 0 0 1-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0 1 15 8.818V3.936Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <h2 class="features-row-box-title">Six</h2>
+            <p class="features-row-box-text">
+              Donec mollis massa id lectus fermentum tempor. Nulla finibus massa
+              es.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback container" id="feedback">
+        <h2 class="title">Write to us</h2>
+        <form class="feedback-form">
+          <div class="feedback-form-box item">
+            <div class="feedback-form-container">
+              <label for="name" class="feedback-form-label">Name:</label>
+              <input type="text" id="name" class="feedback-form-width" />
+            </div>
+
+            <div class="feedback-form-container">
+              <label for="email" class="feedback-form-label">Email:</label>
+              <input type="email" id="email" class="feedback-form-width" />
+            </div>
+
+            <div class="feedback-form-container">
+              <label for="tel" class="feedback-form-label">Phone:</label>
+              <input type="tel" id="tel" class="feedback-form-width" />
+            </div>
+          </div>
+          <div class="feedback-form-box item">
+            <label for="" class="feedback-form-label">Contact me via:</label>
+            <div class="feedback-form-box">
+              <div>
+                <input type="radio" name="contact" id="contactEmail" />
+                <label for="contactEmail" class="feedback-form-label"
+                  >Email</label
+                >
+              </div>
+              <div>
+                <input type="radio" name="contact" id="contactPhone" />
+                <label for="contactPhone" class="feedback-form-label"
+                  >Phone</label
+                >
+              </div>
+              <div>
+                <input type="radio" name="contact" id="contactTelegram" />
+                <label for="contactTelegram" class="feedback-form-label"
+                  >Telegram</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="feedback-form-container">
+            <label for="topics" class="feedback-form-label">Topic:</label>
+            <select name="" id="topics" class="feedback-form-width">
+              <option>Post my story</option>
+              <option>Join our trip</option>
+              <option>Take part in the filming</option>
+            </select>
+          </div>
+          <div class="feedback-form-container">
+            <label for="message" class="feedback-form-label">Message:</label>
+            <textarea
+              name=""
+              id="message"
+              class="feedback-form-height"
+            ></textarea>
+          </div>
+          <div class="feedback-form-box-down">
+            <div class="feedback-form-box">
+              <input type="checkbox" required id="identification" />
+              <label for="identification" class="feedback-form-label"
+                >I am human</label
+              >
+            </div>
+            <div class="feedback-form-box">
+              <button class="button" type="submit">SEND</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <div class="icons">
+        <div class="icons-box">
+          <a class="icons-button" href="https://twitter.com/login">
+            <svg
+              class="icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M22 5.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.343 8.343 0 0 1-2.605.981A4.13 4.13 0 0 0 15.85 4a4.068 4.068 0 0 0-4.1 4.038c0 .31.035.618.105.919A11.705 11.705 0 0 1 3.4 4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 6.1 13.635a4.192 4.192 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 2 18.184 11.732 11.732 0 0 0 8.291 20 11.502 11.502 0 0 0 19.964 8.5c0-.177 0-.349-.012-.523A8.143 8.143 0 0 0 22 5.892Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="icons-box">
+          <a class="icons-button" href="https://www.facebook.com/login/">
+            <svg
+              class="icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="icons-box">
+          <a class="icons-button" href="https://www.instagram.com/login/">
+            <svg
+              class="icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.5 4.586A2 2 0 0 1 8.914 4h6.172a2 2 0 0 1 1.414.586L17.914 6H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h1.086L7.5 4.586ZM10 12a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm2-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="icons-box">
+          <a class="icons-button" href="https://www.youtube.com/login/">
+            <svg
+              class="icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="icons-box">
+          <a class="icons-button" href="https://mail.google.com/login/">
+            <svg
+              class="icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z"
+              />
+              <path
+                d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p class="footer-text">©UNTITLED 2019</p>
+    </footer>
+  </body>
+</html>
