@@ -71,11 +71,11 @@ const reload = () => {
   browsersync.reload();
 };
 
-const watcher = () => {
-  watch("source/sass/**/*.scss", series(styles));
-  watch("source/js/script.js", series(scripts));
-  watch("source/*.html", series(html));
-};
+// const watcher = () => {
+//   watch("source/sass/**/*.scss", series(styles));
+//   watch("source/js/script.js", series(scripts));
+//   watch("source/*.html", series(html));
+// };
 
 // const _default = series(
 //   cleanUp,
@@ -85,4 +85,4 @@ const watcher = () => {
 
 export const build = series(cleanUp, img, parallel(html, styles));
 
-export const browser = series(cleanUp, img, parallel(html, styles), series(server, watcher));
+export const browser = series(cleanUp, img, parallel(html, styles), series(server));
