@@ -27,6 +27,10 @@ const styles = () => {
     .pipe(browsersync.stream());
 };
 
+const fonts = () => {
+  return src("source/font/*.ttf").pipe(fontmin()).pipe(dest("build/fonts/"));
+};
+
 const cleanUp = () => {
   return src("build", { allowEmpty: true }).pipe(clean());
 };
@@ -37,7 +41,7 @@ const img = () =>
       imagemin([
         gifsicle({ interlaced: true }),
         mozjpeg({ quality: 70, progressive: true }),
-        optipng({ optimizationLevel: 1 }),
+        optipng({ optimizationLevel: 0 }),
         svgo({
           plugins: [
             {
@@ -83,6 +87,6 @@ const reload = () => {
 //   // series(server, watcher)
 // );
 
-export const build = series(cleanUp, img, parallel(html, styles));
+export const build = series(cleanUp, img, fonts, parallel(html, styles));
 
-export const browser = series(cleanUp, img, parallel(html, styles), series(server));
+export const browser = series(cleanUp, img, fonts, parallel(html, styles), series(server));
