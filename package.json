@@ -1,0 +1,37 @@
+{
+  "name": "mishka-copy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Mishka"
+  },
+  "keywords": [
+    "asd"
+  ],
+  "author": "Dmytro",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-fontmin": "^0.7.4",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-js-minify": "^0.0.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "browser-sync": "^3.0.2",
+    "gulp-dart-scss": "^1.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-rename": "^2.0.0",
+    "imagemin": "^8.0.1",
+    "swiper": "^11.0.6"
+  }
+}

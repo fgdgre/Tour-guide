@@ -1,0 +1,73 @@
+@import "./colors";
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.button {
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  background-color: $primary-color;
+  color: $secondary-text-color;
+  padding: 5px 5px;
+  cursor: pointer;
+  font-weight: 100;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  margin-top: 10px;
+
+  &:hover {
+    background-color: $secondary-background-color;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  margin: 40px;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &-button {
+    display: flex;
+  }
+
+  &-box {
+    border: 1px solid $secondary-color;
+    border-radius: 50%;
+    padding: 10px;
+
+    &:hover {
+      transform: scale(1.2);
+      background-color: $secondary-background-color;
+      align-items: center;
+    }
+
+    &:hover .icon {
+      // width: 30px;
+      // height: 30px;
+      transform: scale(1.2);
+      fill: $secondary-icons-color;
+    }
+  }
+
+  .icon {
+    fill: $primary-icons-color;
+
+    &:hover {
+      fill: $secondary-icons-color;
+      transform: scale(1.2);
+    }
+  }
+}
